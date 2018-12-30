@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 
-    var wu = "乌克兰语";
+    var wu = "中文";
     var en = "English";
     $("#btnLanguage").text(wu);
 
@@ -17,6 +17,21 @@ $(document).ready(function(){
     var pPleaseBeEn = "Please be sure to include at least one clear headshot, one full-length shot and a shot of your smiling.Minimal make up<br/><br/>Send us Email, Answer in 7 days.";
     var pPleaseBeWu = "请确保至少包括一个清晰的头像,一个完整的镜头和一个微笑的镜头.最少的化妆<br/><br/>给我们发邮件，7天内回复.";
 
+    var hAboutEn = "ABOUT WONDER MODEL AGENCY";
+    var hAboutWu = "关于 MODEL AGENCY";
+
+    var hModelEn = "WONDER MODELS";
+    var hModelWu = "WONDER 模特";
+
+    var hRequireEn = "Require";
+    var hRequireWu = "要求";
+
+    var hMaskEn = "Makings";
+    var hMaskWu = "作品";
+
+    var hBeEn = "BE A MODEL";
+    var hBeWu = "加入我们";
+
     var rlTransEn = "<li class=\"active\"><a href=\"#home\">Home</a></li><li>" +
                 "<a href=\"#about\">About</a></li>\n" +
                 "<li><a href=\"#model\">Models</a></li>\n" +
@@ -24,10 +39,10 @@ $(document).ready(function(){
                  "<li><a href=\"#contact\">Contact</a></li>";
 
     var rlTransWu = "<li class=\"active\"><a href=\"#home\">主页</a>" +
-                "</li><li><a href=\"#About\">关于</a></li>\n" +
-                "<li><a href=\"#Models\">模特</a></li>\n" +
-                "<li><a href=\"#Be a Model\">加入我们</a></li>\n" +
-                "<li><a href=\"#Contact\">联系我们</a></li>";
+                "</li><li><a href=\"#about\">关于</a></li>\n" +
+                "<li><a href=\"#model\">模特</a></li>\n" +
+                "<li><a href=\"#beaModel\">加入我们</a></li>\n" +
+                "<li><a href=\"#contact\">联系我们</a></li>";
 
     var contactEn = "<div class=\"container contactform center\">\n" +
         "        <h2 class=\"text-center  wowload fadeInUp\">CONTACT</h2>\n" +
@@ -77,6 +92,11 @@ $(document).ready(function(){
             $("#pPleaseBe").html(pPleaseBeWu);
             $("#contact").html(contactWu);
             $("#rlTrans").html(rlTransWu);
+            $("#hAbout").text(hAboutWu);
+            $("#hModel").text(hModelWu);
+            $("#hBe").text(hBeWu);
+            $("#hRequire").text(hRequireWu);
+            $("#hMask").text(hMaskWu);
 
 
 
@@ -88,6 +108,11 @@ $(document).ready(function(){
             $("#pPleaseBe").html(pPleaseBeEn);
             $("#contact").html(contactEn);
             $("#rlTrans").html(rlTransEn);
+            $("#hAbout").text(hAboutEn);
+            $("#hModel").text(hModelEn);
+            $("#hBe").text(hBeEn);
+            $("#hRequire").text(hRequireEn);
+            $("#hMask").text(hMaskEn);
         }
     });
 });
