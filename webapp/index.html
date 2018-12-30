@@ -50,20 +50,19 @@
                     <a class="navbar-brand" href="#home" style="padding: 0px !important;">
                         <img src="images/logo.png" alt="logo" style="height: 90px;"></a>
                 </div>
-
-
                 <!-- Nav Starts -->
                 <div class="navbar-collapse  collapse">
-                    <ul class="nav navbar-nav navbar-right scroll">
+                    <ul class="nav navbar-nav navbar-right scroll" id="rlTrans">
                         <li class="active"><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#model">Models</a></li>
                         <li><a href="#beaModel">Be a Model</a></li>
                         <li><a href="#contact">Contact</a></li>
-                        <li>
-                            <btn id="btnLanguage">xxxx</btn>
-                        </li>
                     </ul>
+                    <ul class="nav navbar-nav navbar-right scroll">
+                        <li><btn id="btnLanguage" >xxxx</btn></li>
+                    </ul>
+
                 </div>
                 <!-- #Nav Ends -->
 
@@ -321,7 +320,7 @@ We using unique connections and industry knowledge to develop and nurture models
     <div class="row">
         <div class="col-sm-6 wowload fadeInLeft">
             <h4><i class="glyphicon glyphicon-tags"></i>Require</h4>
-            <p>
+            <p id="pPlease">
                 Please provide the following information:
                 <br/>
                 - Name Age Country City
@@ -337,7 +336,7 @@ We using unique connections and industry knowledge to develop and nurture models
         </div>
         <div class="col-sm-6 wowload fadeInRight">
             <h4><i class="glyphicon glyphicon-folder-open"></i>Makings</h4>
-            <p>
+            <p id="pPleaseBe">
                 Please be sure to include at least one clear headshot, one full-length shot and a shot of your smiling.
                 Minimal make up
                 <br/>
