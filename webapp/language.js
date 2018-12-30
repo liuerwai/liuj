@@ -1,5 +1,4 @@
-$(document).ready(function(){
-
+$(document).ready(function () {
 
     var wu = "中文";
     var en = "English";
@@ -33,16 +32,17 @@ $(document).ready(function(){
     var hBeWu = "加入我们";
 
     var rlTransEn = "<li class=\"active\"><a href=\"#home\">Home</a></li><li>" +
-                "<a href=\"#about\">About</a></li>\n" +
-                "<li><a href=\"#model\">Models</a></li>\n" +
-                "<li><a href=\"#beaModel\">Be a Model</a></li>\n" +
-                 "<li><a href=\"#contact\">Contact</a></li>";
+        "<a href=\"#about\">About</a></li>\n" +
+        "<li><a href=\"#model\">Models</a></li>\n" +
+        "<li><a href=\"#beaModel\">Be a Model</a></li>\n" +
+        "<li><a href=\"#contact\">Contact</a></li>";
+
 
     var rlTransWu = "<li class=\"active\"><a href=\"#home\">主页</a>" +
-                "</li><li><a href=\"#about\">关于</a></li>\n" +
-                "<li><a href=\"#model\">模特</a></li>\n" +
-                "<li><a href=\"#beaModel\">加入我们</a></li>\n" +
-                "<li><a href=\"#contact\">联系我们</a></li>";
+        "</li><li><a href=\"#about\">关于</a></li>\n" +
+        "<li><a href=\"#model\">模特</a></li>\n" +
+        "<li><a href=\"#beaModel\">加入我们</a></li>\n" +
+        "<li><a href=\"#contact\">联系我们</a></li>";
 
     var contactEn = "<div class=\"container contactform center\">\n" +
         "        <h2 class=\"text-center  wowload fadeInUp\">CONTACT</h2>\n" +
@@ -71,20 +71,16 @@ $(document).ready(function(){
         "                            href=\"https://weibo.com/6353604595/profile?rightmod=1&wvr=6&mod=personinfo\" target=\"_blank\">Weibo</a>&nbsp;&nbsp;&nbsp;<a\n" +
         "                            href=\"https://vk.com/id316008536\" target=\"_blank\">VK</a>&nbsp;&nbsp;&nbsp;<a\n" +
         "                            href=\"https://www.instagram.com/wondermodels_/\" target=\"_blank\">Ins</a></p>\n" +
-        "                    <p><b style=\"font-size: 20px;\">地址：</b>Room 904,7th building, xinliboshi mall, chenghua\n" +
-        "                        district, Chengdu city, China 610000</p>\n" +
+        "                    <p><b style=\"font-size: 20px;\">地址：</b>四川成都市成华区新荔波市商场7号楼904室610000" +
+        "                        </p>\n" +
         "                </figcaption>\n" +
         "            </div>\n" +
         "        </div>\n" +
         "    </div>";
 
 
-
-
-
-
-    $("#btnLanguage").click(function(){
-        if(($("#btnLanguage").text() == wu)){
+    $("#btnLanguage").click(function () {
+        if (($("#btnLanguage").text() == wu)) {
             $("#btnLanguage").text(en);
             $("#pWonder").text(pWonderWu);
             $("#pSince").text(pSinceWu);
@@ -97,7 +93,6 @@ $(document).ready(function(){
             $("#hBe").text(hBeWu);
             $("#hRequire").text(hRequireWu);
             $("#hMask").text(hMaskWu);
-
 
 
         } else {
