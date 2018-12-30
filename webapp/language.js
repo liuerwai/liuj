@@ -79,6 +79,20 @@ $(document).ready(function () {
         "    </div>";
 
 
+    $("#btnLanguage").text(wu);
+    $("#pWonder").text(pWonderEn);
+    $("#pSince").text(pSinceEn);
+    $("#pPlease").html(pPleaseEn);
+    $("#pPleaseBe").html(pPleaseBeEn);
+    $("#contact").html(contactEn);
+    $("#rlTrans").html(rlTransEn);
+    $("#hAbout").text(hAboutEn);
+    $("#hModel").text(hModelEn);
+    $("#hBe").text(hBeEn);
+    $("#hRequire").text(hRequireEn);
+    $("#hMask").text(hMaskEn);
+
+
     $("#btnLanguage").click(function () {
         if (($("#btnLanguage").text() == wu)) {
             $("#btnLanguage").text(en);
