@@ -141,7 +141,7 @@ $(document).ready(function () {
     (function () {
         var timer = setTimeout(function () {
             $BeforeEnter.fadeOut("slow");
-        },50000);
+        },7000);
         // 定时消除video
         var $BeforeEnter = $('#before-enter');
         $BeforeEnter.click(function() {

@@ -42,7 +42,16 @@
             line-height: 85px;
             margin-right: 20px;
             cursor: pointer;
+            color: darkgreen;
         }
+
+        .btnContainer {
+            position: absolute;
+            cursor: pointer;
+            left: 40%;
+            top: 30%;
+        }
+
     </style>
     <script src="assets/video.min.js"></script>
     <script src="assets/html5media.min.js"></script>
@@ -54,17 +63,14 @@
 <div class="topbar animated fadeInLeftBig"></div>
 <!--进入首页前-->
 <div id="before-enter">
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation" style="top: 0px;">
-        <div class="container">
-            <a class="navbar-brand" href="#home.html" style="padding: 0px !important;">
-                <img src="images/logo.png" alt="logo" style="height: 90px;">
-            </a>
-            <span id="btnLanguage">中文
-            </span>
-        </div>
 
-
+    <div class="btnContainer">
+        <a href="#home.html">
+            <img src="images/logo.png" alt="logo">
+        </a>
+        <span id="btnLanguage">中文</span>
     </div>
+
     <video ishivideo="true" muted="muted" autoplay="true" isrotate="false" autohide="true" loop="loop"
            src="./images/test.mp4">
         <source src="./images/test.mp4" type="video/mp4">
@@ -78,7 +84,7 @@
         <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="top-nav" style="top: 0px;">
             <!--<div class="navbar-collapse  collapse">-->
             <!--<button id="btnLanguage"-->
-                    <!--style="background-color: transparent; outline:none; border-style: none; float:right">语言-->
+            <!--style="background-color: transparent; outline:none; border-style: none; float:right">语言-->
             <!--</button>-->
             <!--</div>-->
             <div class="container">
