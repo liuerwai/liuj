@@ -31,18 +31,18 @@ $(document).ready(function () {
     var hBeEn = "BE A MODEL";
     var hBeWu = "加入我们";
 
-    var rlTransEn = "<li class=\"active\"><a href=\"#home\">Home</a></li><li>" +
-        "<a href=\"#about\">About</a></li>\n" +
-        "<li><a href=\"#model\">Models</a></li>\n" +
-        "<li><a href=\"#beaModel\">Be a Model</a></li>\n" +
-        "<li><a href=\"#contact\">Contact</a></li>";
+    var rlTransEn = "<li class=\"active\"><a href=\"home2.html\">Home</a></li><li>" +
+        "<a href=\"about.html\">About</a></li>\n" +
+        "<li><a href=\"model.html\">Models</a></li>\n" +
+        "<li><a href=\"beModel.html\">Be a Model</a></li>\n" +
+        "<li><a href=\"contact.html\">Contact</a></li>";
 
 
-    var rlTransWu = "<li class=\"active\"><a href=\"#home\">主页</a>" +
-        "</li><li><a href=\"#about\">关于</a></li>\n" +
-        "<li><a href=\"#model\">模特</a></li>\n" +
-        "<li><a href=\"#beaModel\">加入我们</a></li>\n" +
-        "<li><a href=\"#contact\">联系我们</a></li>";
+    var rlTransWu = "<li class=\"active\"><a href=\"home2.html\">主页</a>" +
+        "</li><li><a href=\"about.html\">关于</a></li>\n" +
+        "<li><a href=\"model.html\">模特</a></li>\n" +
+        "<li><a href=\"beModel.html\">加入我们</a></li>\n" +
+        "<li><a href=\"contact.html\">联系我们</a></li>";
 
     var contactEn = "<div class=\"container contactform center\">\n" +
         "        <h2 class=\"text-center  wowload fadeInUp\">CONTACT</h2>\n" +
@@ -84,7 +84,7 @@ $(document).ready(function () {
     $("#pSince").text(pSinceEn);
     $("#pPlease").html(pPleaseEn);
     $("#pPleaseBe").html(pPleaseBeEn);
-    $("#contact").html(contactEn);
+    $("contact").html(contactEn);
     $("#rlTrans").html(rlTransEn);
     $("#hAbout").text(hAboutEn);
     $("#hModel").text(hModelEn);
@@ -100,7 +100,7 @@ $(document).ready(function () {
             $("#pSince").text(pSinceWu);
             $("#pPlease").html(pPleaseWu);
             $("#pPleaseBe").html(pPleaseBeWu);
-            $("#contact").html(contactWu);
+            $("contact").html(contactWu);
             $("#rlTrans").html(rlTransWu);
             $("#hAbout").text(hAboutWu);
             $("#hModel").text(hModelWu);
@@ -115,7 +115,7 @@ $(document).ready(function () {
             $("#pSince").text(pSinceEn);
             $("#pPlease").html(pPleaseEn);
             $("#pPleaseBe").html(pPleaseBeEn);
-            $("#contact").html(contactEn);
+            $("contact").html(contactEn);
             $("#rlTrans").html(rlTransEn);
             $("#hAbout").text(hAboutEn);
             $("#hModel").text(hModelEn);
