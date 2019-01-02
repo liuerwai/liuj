@@ -31,18 +31,20 @@ $(document).ready(function () {
     var hBeEn = "BE A MODEL";
     var hBeWu = "加入我们";
 
-    var rlTransEn = "<li class=\"active\"><a href=\"home2.html\">Home</a></li><li>" +
-        "<a href=\"about.html\">About</a></li>\n" +
-        "<li><a href=\"model.html\">Models</a></li>\n" +
-        "<li><a href=\"beModel.html\">Be a Model</a></li>\n" +
-        "<li><a href=\"contact.html\">Contact</a></li>";
+    var aHomeEn = "Home";
+    var aHomeWu = "主页";
 
+    var aAboutEn = "About";
+    var aAboutWu = "关于";
 
-    var rlTransWu = "<li class=\"active\"><a href=\"home2.html\">主页</a>" +
-        "</li><li><a href=\"about.html\">关于</a></li>\n" +
-        "<li><a href=\"model.html\">模特</a></li>\n" +
-        "<li><a href=\"beModel.html\">加入我们</a></li>\n" +
-        "<li><a href=\"contact.html\">联系我们</a></li>";
+    var aModelEn = "Models";
+    var aModelWu = "模特";
+
+    var aBeaModelEn = "Be a Model";
+    var aBeaModelWu = "加入我们";
+
+    var aContactEn = "Contact";
+    var aContactWu = "联系我们";
 
     var contactEn = "<div class=\"container contactform center\">\n" +
         "        <h2 class=\"text-center  wowload fadeInUp\">CONTACT</h2>\n" +
@@ -85,8 +87,11 @@ $(document).ready(function () {
     $("#pPlease").html(pPleaseEn);
     $("#pPleaseBe").html(pPleaseBeEn);
     $("#contact").html(contactEn);
-    $("#rlTrans").html(rlTransEn);
-    $("#hAbout").text(hAboutEn);
+    $("#aHome").text(aHomeEn);
+    $("#aAbout").text(aAboutEn);
+    $("#aModel").text(aModelEn);
+    $("#aBeaModel").text(aBeaModelEn);
+    $("#aContact").text(aContactEn);
     $("#hModel").text(hModelEn);
     $("#hBe").text(hBeEn);
     $("#hRequire").text(hRequireEn);
@@ -101,7 +106,11 @@ $(document).ready(function () {
             $("#pPlease").html(pPleaseWu);
             $("#pPleaseBe").html(pPleaseBeWu);
             $("#contact").html(contactWu);
-            $("#rlTrans").html(rlTransWu);
+            $("#aHome").text(aHomeWu);
+            $("#aAbout").text(aAboutWu);
+            $("#aModel").text(aModelWu);
+            $("#aBeaModel").text(aBeaModelWu);
+            $("#aContact").text(aContactWu);
             $("#hAbout").text(hAboutWu);
             $("#hModel").text(hModelWu);
             $("#hBe").text(hBeWu);
@@ -116,7 +125,11 @@ $(document).ready(function () {
             $("#pPlease").html(pPleaseEn);
             $("#pPleaseBe").html(pPleaseBeEn);
             $("#contact").html(contactEn);
-            $("#rlTrans").html(rlTransEn);
+            $("#aHome").text(aHomeEn);
+            $("#aAbout").text(aAboutEn);
+            $("#aModel").text(aModelEn);
+            $("#aBeaModel").text(aBeaModelEn);
+            $("#aContact").text(aContactEn);
             $("#hAbout").text(hAboutEn);
             $("#hModel").text(hModelEn);
             $("#hBe").text(hBeEn);
@@ -128,7 +141,7 @@ $(document).ready(function () {
     (function () {
         var timer = setTimeout(function () {
             $BeforeEnter.fadeOut("slow");
-        },5000);
+        },50000);
         // 定时消除video
         var $BeforeEnter = $('#before-enter');
         $BeforeEnter.click(function() {

@@ -31,13 +31,14 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 
 .topbar {background:url(../images/lines.png);	height:5px;position: fixed;top: 0;width: 100%;z-index: 1000;}
 .navbar-nav > li > a{font-size: 1em;line-height: 3.6em;}
-.navbar-fixed-top{top: 5px;}
+.navbar-fixed-top{top: 5px;
+	height: 85px;}
 .navbar-inverse{background: #111;}
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{background: none;color: #21abca;}
 
 #head,.carousel{margin-top: 0;}
 
-home2.html{padding-top: 6em;}
+#home.html{padding-top: 6em;}
 .carousel-caption{top:0;bottom: 0;left: 0; right: 0;padding: 0;}
 .caption-wrapper{display: table;height: 100%;width: 100%;}
 .caption-info{display: table-cell;vertical-align: middle;}
