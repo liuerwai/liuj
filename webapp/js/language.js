@@ -84,7 +84,7 @@ $(document).ready(function () {
     $("#pSince").text(pSinceEn);
     $("#pPlease").html(pPleaseEn);
     $("#pPleaseBe").html(pPleaseBeEn);
-    $("contact").html(contactEn);
+    $("#contact").html(contactEn);
     $("#rlTrans").html(rlTransEn);
     $("#hAbout").text(hAboutEn);
     $("#hModel").text(hModelEn);
@@ -100,7 +100,7 @@ $(document).ready(function () {
             $("#pSince").text(pSinceWu);
             $("#pPlease").html(pPleaseWu);
             $("#pPleaseBe").html(pPleaseBeWu);
-            $("contact").html(contactWu);
+            $("#contact").html(contactWu);
             $("#rlTrans").html(rlTransWu);
             $("#hAbout").text(hAboutWu);
             $("#hModel").text(hModelWu);
@@ -115,7 +115,7 @@ $(document).ready(function () {
             $("#pSince").text(pSinceEn);
             $("#pPlease").html(pPleaseEn);
             $("#pPleaseBe").html(pPleaseBeEn);
-            $("contact").html(contactEn);
+            $("#contact").html(contactEn);
             $("#rlTrans").html(rlTransEn);
             $("#hAbout").text(hAboutEn);
             $("#hModel").text(hModelEn);
@@ -124,7 +124,7 @@ $(document).ready(function () {
             $("#hMask").text(hMaskEn);
         }
     });
-    
+
     (function () {
         var timer = setTimeout(function () {
             $BeforeEnter.fadeOut("slow");
