@@ -124,4 +124,19 @@ $(document).ready(function () {
             $("#hMask").text(hMaskEn);
         }
     });
+    
+    (function () {
+        var timer = setTimeout(function () {
+            $BeforeEnter.fadeOut("slow");
+        },5000);
+        // 定时消除video
+        var $BeforeEnter = $('#before-enter');
+        $BeforeEnter.click(function() {
+            if (timer) {
+                clearTimeout(timer);
+            }
+            $BeforeEnter.fadeOut("slow");
+        });
+    })();
+
 });
