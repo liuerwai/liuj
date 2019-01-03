@@ -1,9 +1,6 @@
 $(document).ready(function () {
-
     var wu = "中文";
     var en = "English";
-    $("#btnLanguage").text(wu);
-
     var pWonderEn = "Wonder Model Agency is an international model management agency based in China(Chengdu).It was established at beginning of 2015. Members of team come from media, advertising, public relations ";
     var pWonderWu = "Wonder Model Agency是一家总部设在中国（成都）的国际模型管理机构，成立于2015年初。团队成员来自媒体、广告、公关公司。我们共同培养了自己的力量和经验，建立了机构。";
 
@@ -79,77 +76,66 @@ $(document).ready(function () {
         "            </div>\n" +
         "        </div>\n" +
         "    </div>";
-
-
     $("#btnLanguage").text(wu);
-    $("#pWonder").text(pWonderEn);
-    $("#pSince").text(pSinceEn);
-    $("#pPlease").html(pPleaseEn);
-    $("#pPleaseBe").html(pPleaseBeEn);
-    $("#contact").html(contactEn);
-    $("#aHome").text(aHomeEn);
-    $("#aAbout").text(aAboutEn);
-    $("#aModel").text(aModelEn);
-    $("#aBeaModel").text(aBeaModelEn);
-    $("#aContact").text(aContactEn);
-    $("#hModel").text(hModelEn);
-    $("#hBe").text(hBeEn);
-    $("#hRequire").text(hRequireEn);
-    $("#hMask").text(hMaskEn);
-
-
-    $("#btnLanguage").click(function () {
-        if (($("#btnLanguage").text() == wu)) {
-            $("#btnLanguage").text(en);
-            $("#pWonder").text(pWonderWu);
-            $("#pSince").text(pSinceWu);
-            $("#pPlease").html(pPleaseWu);
-            $("#pPleaseBe").html(pPleaseBeWu);
-            $("#contact").html(contactWu);
-            $("#aHome").text(aHomeWu);
-            $("#aAbout").text(aAboutWu);
-            $("#aModel").text(aModelWu);
-            $("#aBeaModel").text(aBeaModelWu);
-            $("#aContact").text(aContactWu);
-            $("#hAbout").text(hAboutWu);
-            $("#hModel").text(hModelWu);
-            $("#hBe").text(hBeWu);
-            $("#hRequire").text(hRequireWu);
-            $("#hMask").text(hMaskWu);
-
-
-        } else {
-            $("#btnLanguage").text(wu);
-            $("#pWonder").text(pWonderEn);
-            $("#pSince").text(pSinceEn);
-            $("#pPlease").html(pPleaseEn);
-            $("#pPleaseBe").html(pPleaseBeEn);
-            $("#contact").html(contactEn);
-            $("#aHome").text(aHomeEn);
-            $("#aAbout").text(aAboutEn);
-            $("#aModel").text(aModelEn);
-            $("#aBeaModel").text(aBeaModelEn);
-            $("#aContact").text(aContactEn);
-            $("#hAbout").text(hAboutEn);
-            $("#hModel").text(hModelEn);
-            $("#hBe").text(hBeEn);
-            $("#hRequire").text(hRequireEn);
-            $("#hMask").text(hMaskEn);
-        }
+    toEnglish();
+    $("#btnEn").click(function () {
+        toEnglish()
     });
-
+    $("#btnCn").click(function () {
+        toChinese();
+    });
     (function () {
         var timer = setTimeout(function () {
             $BeforeEnter.fadeOut("slow");
-        },5000);
+        }, 6000000);
         // 定时消除video
         var $BeforeEnter = $('#before-enter');
-        $BeforeEnter.click(function() {
+        $BeforeEnter.click(function () {
             if (timer) {
                 clearTimeout(timer);
             }
             $BeforeEnter.fadeOut("slow");
         });
     })();
+
+    // 切换至英语
+    function toEnglish() {
+        $("#btnLanguage").text(wu);
+        $("#pWonder").text(pWonderEn);
+        $("#pSince").text(pSinceEn);
+        $("#pPlease").html(pPleaseEn);
+        $("#pPleaseBe").html(pPleaseBeEn);
+        $("#contact").html(contactEn);
+        $("#aHome").text(aHomeEn);
+        $("#aAbout").text(aAboutEn);
+        $("#aModel").text(aModelEn);
+        $("#aBeaModel").text(aBeaModelEn);
+        $("#aContact").text(aContactEn);
+        $("#hAbout").text(hAboutEn);
+        $("#hModel").text(hModelEn);
+        $("#hBe").text(hBeEn);
+        $("#hRequire").text(hRequireEn);
+        $("#hMask").text(hMaskEn);
+    }
+
+    // 切换至汉语
+    function toChinese() {
+        $("#btnLanguage").text(en);
+        $("#pWonder").text(pWonderWu);
+        $("#pSince").text(pSinceWu);
+        $("#pPlease").html(pPleaseWu);
+        $("#pPleaseBe").html(pPleaseBeWu);
+        $("#contact").html(contactWu);
+        $("#aHome").text(aHomeWu);
+        $("#aAbout").text(aAboutWu);
+        $("#aModel").text(aModelWu);
+        $("#aBeaModel").text(aBeaModelWu);
+        $("#aContact").text(aContactWu);
+        $("#hAbout").text(hAboutWu);
+        $("#hModel").text(hModelWu);
+        $("#hBe").text(hBeWu);
+        $("#hRequire").text(hRequireWu);
+        $("#hMask").text(hMaskWu);
+    }
 
 });
