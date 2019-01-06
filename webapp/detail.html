@@ -13,16 +13,41 @@
     <link rel="stylesheet" href="assets/gallery/blueimp-gallery.min.css">
     <link rel="stylesheet" href="assets/style.css">
     <style>
-        .Albums-item {
-            margin: 20px;
+
+        #peopleInfo {
             float: left;
+            margin: 15px;
+            line-height: 20px;
+            border-color: #dddddd;
+            background-color: #dddddd;
         }
-        #data li{
+
+        #name {
+            color: black;
+        }
+
+        #data li {
+            text-align: left;
             margin: 5px;
+            color: black;
         }
-        #data i{
+
+        #data span {
             margin: 15px;
         }
+
+        #opus {
+            background-color: #dddddd;
+        }
+
+        #opus a {
+            margin: 2px;
+        }
+
+        #opus a hover {
+            text-decoration: none;
+        }
+
     </style>
     <script src="assets/video.min.js"></script>
     <script src="assets/html5media.min.js"></script>
@@ -54,115 +79,98 @@
                         <li class="active"><a id="aHome" href="index.html">Home</a></li>
                     </ul>
                 </div>
-
-
-
             </div>
         </div>
     </div>
 </div>
 
 <div id="content" class="spacer clearfix grid" style="height: 1200px">
-    <div id="peopleInfo" style="float:left;width: 30%; margin-top: 20px; line-height: 20px">
-        <div id="name" style="left: 0">
-            <span>Yeva</span>
+    <div id="peopleInfo">
+        <div id="name">
+            <h2>Yeva</h2>
         </div>
-        <div id="image" style="width: 100%; height: 100%; left: 0; margin-top: 20px;">
-            <img style="width: 120px; height: 160px;left: 0;" src="images/model/DianaB/1.jpg">
+        <div id="image">
+            <img style="width: 350px; height: 350px;" src="images/model/DianaB/1.jpg">
         </div>
-        <div id="data" style="margin-top: 20px;">
-            <li><i>生日</i><b>11-25</b></li>
-            <li><i>SEX</i><b>女</b></li>
-            <li><i>身高</i><b>170 cm</b></li>
-            <li><i>胸围</i><b>81 cm</b></li>
-            <li><i>腰围</i><b>59 cm</b></li>
-            <li><i>臀围</i><b>87 cm</b></li>
-            <li><i>鞋码</i><b>38</b></li>
-            <li><i>眼睛眼色</i><b>Blue</b></li>
-            <li><i>发色</i><b>Blonde</b></li>
-            <li><i>肤色</i><b>White</b></li>
-            </ul>
-            <ul style="display: none;">
-                <li><i>生日</i><b>11-25</b></li>
-                <li><i>SEX</i><b>女</b></li>
-                <li><i>身高</i><b>5'7"</b></li>
-                <li><i>胸围</i><b>32"</b></li>
-                <li><i>腰围</i><b>23"</b></li>
-                <li><i>臀围</i><b>34"</b></li>
-                <li><i>鞋码</i><b>38</b></li>
-                <li><i>眼睛眼色</i><b>Blue</b></li>
-                <li><i>发色</i><b>Blonde</b></li>
-                <li><i>肤色</i><b>White</b></li>
-            </ul>
+        <div id="data" style="margin: 15px;">
+            <div style="background-color: #dddddd;width: 350px; height: 350px;">
+                <li><span>生日</span>11-25</li>
+                <li><span>SEX</span>女</li>
+                <li><span>身高</span>170 cm</li>
+                <li><span>胸围</span>81 cm</li>
+                <li><span>腰围</span>59 cm</li>
+                <li><span>臀围</span>87 cm</li>
+                <li><span>鞋码</span>38</li>
+                <li><span>眼睛眼色</span>Blue</li>
+                <li><span>发色</span>Blonde</li>
+                <li><span>肤色</span>White</li>
+            </div>
         </div>
     </div>
-    <div id="center" style="position: absolute;left: 30%; float: left">
-        <!-- Tab panes -->
-        <div id="Albums">
-
-            <div class="Albums-item">
+    <div id="center">
+        <div id="tab-title">
+            <div>
                 <div>
                     <a href="#opus" aria-controls="home" role="tab" data-toggle="tab">
                         <img src="images/model/Yeva/opus.jpg" width="200px" height="200px">
                     </a>
                 </div>
-                <span>作品照</span>
+                <div style="margin-top:5px;"><b>作品照</b></div>
             </div>
-
-            <div class="Albums-item">
+            <div>
                 <div>
                     <a href="#makeup" aria-controls="profile" role="tab" data-toggle="tab">
                         <img src="images/model/Yeva/makeup.jpg" width="200px" height="200px">
                     </a>
                 </div>
-                <span>素颜</span>
+                <div style="margin-top:5px;"><b>素颜</b></div>
             </div>
-            <div class="Albums-item">
+            <div>
                 <div>
                     <a href="#video" aria-controls="settings" role="tab" data-toggle="tab">
                         <img src="images/model/Yeva/video.jpg" width="200px" height="200px">
                     </a>
                 </div>
-                <span>视频</span>
+                <div style="margin-top:5px;"><b>视频</b></div>
             </div>
         </div>
-        <div class="tab-content" style="height: 400px; margin: 20px">
-            <div role="tabpanel" class="tab-pane active" id="opus">
-                <div style="float: left">
+        <div class="tab-content" style="float: left">
+            <div id="opus" role="tabpanel" class="tab-pane active">
+                <div style="float: left;">
                     <a href="images/model/Yeva/opus/1.jpg" name="imgView">
-                        <img src="images/model/Yeva/opus/1.jpg" height="240px" width="160px">
+                        <img src="images/model/Yeva/opus/1.jpg"/>
                     </a>
                     <a href="images/model/Yeva/opus/2.jpg" name="imgView">
-                        <img src="images/model/Yeva/opus/2.jpg" height="240px" width="160px">
+                        <img src="images/model/Yeva/opus/2.jpg">
                     </a>
                     <a href="images/model/Yeva/opus/3.jpg" name="imgView">
-                        <img src="images/model/Yeva/opus/3.jpg" height="240px" width="160px">
+                        <img src="images/model/Yeva/opus/3.jpg">
                     </a>
                     <a href="images/model/Yeva/opus/4.jpg" name="imgView">
-                        <img src="images/model/Yeva/opus/4.jpg" height="240px" width="160px">
+                        <img src="images/model/Yeva/opus/4.jpg">
                     </a>
                     <a href="images/model/Yeva/opus/5.jpg" name="imgView">
-                        <img src="images/model/Yeva/opus/5.jpg" height="240px" width="160px">
+                        <img src="images/model/Yeva/opus/5.jpg">
                     </a>
                     <a href="images/model/Yeva/opus/6.jpg" name="imgView">
-                        <img src="images/model/Yeva/opus/6.jpg" height="240px" width="160px">
+                        <img src="images/model/Yeva/opus/6.jpg">
                     </a>
                     <a href="images/model/Yeva/opus/7.jpg" name="imgView">
-                        <img src="images/model/Yeva/opus/7.jpg" height="240px" width="160px">
+                        <img src="images/model/Yeva/opus/7.jpg">
                     </a>
                     <a href="images/model/Yeva/opus/8.jpg" name="imgView">
-                        <img src="images/model/Yeva/opus/8.jpg" height="240px" width="160px">
+                        <img src="images/model/Yeva/opus/8.jpg">
                     </a>
                 </div>
             </div>
-            <div role="tabpanel" class="tab-pane" id="makeup">
+            <div id="makeup" role="tabpanel" class="tab-pane">
                 <div style="float: left">
                     <a href="images/model/Yeva/makeup/1.jpg" name="imgView">
-                        <img src="images/model/Yeva/makeup/1.jpg" height="240px" width="160px">
+                        <img src="images/model/Yeva/makeup/1.jpg">
                     </a>
                 </div>
             </div>
-            <div role="tabpanel" class="tab-pane" id="video">
+            <div id="video" role="tabpanel" class="tab-pane">
                 <div style="float: left; height: 400px">
                     <video ishivideo="true" muted="muted" autoplay="true" isrotate="false" autohide="true" loop="loop"
                            src="images/model/Yeva/video/video.mp4">
@@ -172,8 +180,6 @@
                 </div>
             </div>
         </div>
-
-
     </div>
 </div>
 
