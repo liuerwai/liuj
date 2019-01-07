@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    isFromDetail();
     var wu = "中文";
     var en = "English";
     var pWonderEn = "Wonder Model Agency is an international model management agency based in China(Chengdu).It was established at beginning of 2015. Members of team come from media, advertising, public relations ";
@@ -78,7 +79,6 @@ $(document).ready(function () {
         "    </div>";
     $("#btnLanguage").text(wu);
     toEnglish();
-    isFromDetail();
     $("#btnEn").click(function () {
         toEnglish()
     });
