@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/gallery/blueimp-gallery.min.css">
     <link rel="stylesheet" href="assets/style.css">
     <style>
-        #content{
+        #content {
             display: -webkit-flex;
             display: flex;
         }
@@ -24,7 +24,8 @@
             border-color: #dddddd;
             background-color: #dddddd;
         }
-        #center{
+
+        #center {
             flex-grow: 1;
         }
 
@@ -42,44 +43,42 @@
             margin: 15px;
         }
 
-        /*#opus {*/
-            /*display: -webkit-flex;*/
-            /*display: flex;*/
-            /*flex-wrap: wrap;*/
-        /*}*/
-
-        /*#opus a {*/
-            /*flex: 0 1 20%;*/
-            /*text-decoration: none;*/
-        /*}*/
-        /*#opus a img{*/
-            /*width:100%;*/
-            /*height:100%;*/
-        /*}*/
-
-        #tab-title{
+        #tab-title {
             display: -webkit-flex;
             display: flex;
             margin-bottom: 20px;
         }
-        #tab-title .tab-title__item{
+
+        #tab-title .tab-title__item {
             flex-grow: 1;
         }
 
-        .tab-title__item a{
+        .tab-title__item a {
             padding-top: 5px;
             text-decoration: none;
         }
 
-        .tab-title__item img{
+        .tab-title__item img {
             width: 200px;
             height: 230px;
         }
 
-        .tab-title__item span{
+        .tab-title__item span {
             margin-top: 10px;
             display: inline-block;
         }
+        
+        #opus .tab-content-item {
+            display: flex;
+            display: -webkit-flex;
+            flex-wrap: wrap;
+        }
+
+        #opus a {
+            text-decoration: none;
+        }
+
+
     </style>
     <script src="assets/video.min.js"></script>
     <script src="assets/html5media.min.js"></script>
@@ -139,51 +138,53 @@
             </div>
         </div>
     </div>
-    <div id="center" >
+    <div id="center">
         <div id="tab-title">
             <div class="tab-title__item">
                 <a href="#opus" aria-controls="home" role="tab" data-toggle="tab">
-                    <img src="images/model/Yeva/opus.jpg"  > <br/>
+                    <img src="images/model/Yeva/opus.jpg"> <br/>
                     <span>作品照</span>
                 </a>
             </div>
             <div class="tab-title__item">
                 <a href="#makeup" aria-controls="profile" role="tab" data-toggle="tab">
-                    <img src="images/model/Yeva/makeup.jpg"  > <br/>
+                    <img src="images/model/Yeva/makeup.jpg"> <br/>
                     <span>素颜</span>
                 </a>
             </div>
             <div class="tab-title__item">
                 <a href="#video" aria-controls="settings" role="tab" data-toggle="tab">
-                    <img src="images/model/Yeva/video.jpg" > <br/>
+                    <img src="images/model/Yeva/video.jpg"> <br/>
                     <span>视频</span>
                 </a>
             </div>
         </div>
-        <div class="tab-content" >
+        <div class="tab-content">
             <div id="opus" role="tabpanel" class="tab-pane active">
-                <a href="images/model/Yeva/opus/1.jpg" name="imgView">
-                    <img src="images/model/Yeva/opus/1.jpg"/>
-                </a>
+                <div class="tab-content-item">
+                    <a href="images/model/Yeva/opus/1.jpg" name="imgView">
+                        <img src="images/model/Yeva/opus/1.jpg"/>
+                    </a>
 
-                <a href="images/model/Yeva/opus/3.jpg" name="imgView">
-                    <img src="images/model/Yeva/opus/3.jpg">
-                </a>
-                <a href="images/model/Yeva/opus/4.jpg" name="imgView">
-                    <img src="images/model/Yeva/opus/4.jpg">
-                </a>
-                <a href="images/model/Yeva/opus/5.jpg" name="imgView">
-                    <img src="images/model/Yeva/opus/5.jpg">
-                </a>
-                <a href="images/model/Yeva/opus/6.jpg" name="imgView">
-                    <img src="images/model/Yeva/opus/6.jpg">
-                </a>
-                <a href="images/model/Yeva/opus/7.jpg" name="imgView">
-                    <img src="images/model/Yeva/opus/7.jpg">
-                </a>
-                <a href="images/model/Yeva/opus/8.jpg" name="imgView">
-                    <img src="images/model/Yeva/opus/8.jpg">
-                </a>
+                    <a href="images/model/Yeva/opus/3.jpg" name="imgView">
+                        <img src="images/model/Yeva/opus/3.jpg">
+                    </a>
+                    <a href="images/model/Yeva/opus/4.jpg" name="imgView">
+                        <img src="images/model/Yeva/opus/4.jpg">
+                    </a>
+                    <a href="images/model/Yeva/opus/5.jpg" name="imgView">
+                        <img src="images/model/Yeva/opus/5.jpg">
+                    </a>
+                    <a href="images/model/Yeva/opus/6.jpg" name="imgView">
+                        <img src="images/model/Yeva/opus/6.jpg">
+                    </a>
+                    <a href="images/model/Yeva/opus/7.jpg" name="imgView">
+                        <img src="images/model/Yeva/opus/7.jpg">
+                    </a>
+                    <a href="images/model/Yeva/opus/8.jpg" name="imgView">
+                        <img src="images/model/Yeva/opus/8.jpg">
+                    </a>
+                </div>
             </div>
             <div id="makeup" role="tabpanel" class="tab-pane">
                 <a href="images/model/Yeva/makeup/1.jpg" name="imgView">
@@ -239,7 +240,7 @@
             url: "/getUser",
             data: {userId: GetQueryString('userId')},
             dataType: "json",
-            success: function(data) {
+            success: function (data) {
                 var html = '';
                 $.each(data, function (commentIndex, comment) {
                     html += '<div class="comment"><h6>' + comment['username']
@@ -249,15 +250,16 @@
             }
         })
     });
+
     // 获取url参数用户Id
-    function GetQueryString(name)
-    {
-        var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+    function GetQueryString(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
         var r = window.location.search.substr(1).match(reg);
-        if(r!=null)return  unescape(r[2]); return null;
+        if (r != null) return unescape(r[2]);
+        return null;
     }
 
-    console.log('userId',GetQueryString('userId'));
+    console.log('userId', GetQueryString('userId'));
 </script>
 </body>
 </html>
