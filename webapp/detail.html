@@ -16,17 +16,20 @@
         #content {
             display: -webkit-flex;
             display: flex;
+            height: 1350px
         }
 
         #peopleInfo {
             margin: 15px;
             line-height: 20px;
-            border-color: #dddddd;
             background-color: #dddddd;
         }
 
-        #center {
-            flex-grow: 1;
+        #works {
+              flex-grow: 1;
+          }
+        #works hr{
+            color: #9e5406;
         }
 
         #name {
@@ -67,7 +70,7 @@
             margin-top: 10px;
             display: inline-block;
         }
-        
+
         #opus .tab-content-item {
             display: flex;
             display: -webkit-flex;
@@ -115,7 +118,7 @@
     </div>
 </div>
 
-<div id="content" class="spacer clearfix grid" style="height: 1200px">
+<div id="content" class="spacer clearfix grid">
     <div id="peopleInfo">
         <div id="name">
             <h2>Yeva</h2>
@@ -138,7 +141,7 @@
             </div>
         </div>
     </div>
-    <div id="center">
+    <div id="works">
         <div id="tab-title">
             <div class="tab-title__item">
                 <a href="#opus" aria-controls="home" role="tab" data-toggle="tab">
@@ -159,6 +162,7 @@
                 </a>
             </div>
         </div>
+        <hr/>
         <div class="tab-content">
             <div id="opus" role="tabpanel" class="tab-pane active">
                 <div class="tab-content-item">
