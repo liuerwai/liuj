@@ -26,9 +26,10 @@
         }
 
         #works {
-              flex-grow: 1;
-          }
-        #works hr{
+            flex-grow: 1;
+        }
+
+        #works hr {
             color: #9e5406;
         }
 
@@ -52,23 +53,28 @@
             margin-bottom: 20px;
         }
 
-        #tab-title .tab-title__item {
+        #tab-title .tab-title-item {
             flex-grow: 1;
         }
 
-        .tab-title__item a {
+        .tab-title-item a {
             padding-top: 5px;
             text-decoration: none;
         }
 
-        .tab-title__item img {
+        .tab-title-item img {
             width: 200px;
             height: 230px;
         }
 
-        .tab-title__item span {
+        .tab-title-item span {
             margin-top: 10px;
             display: inline-block;
+        }
+
+        .tab-content-img {
+            width: 170px;
+            height: 255px;
         }
 
         #opus .tab-content-item {
@@ -80,7 +86,6 @@
         #opus a {
             text-decoration: none;
         }
-
 
     </style>
     <script src="assets/video.min.js"></script>
@@ -143,19 +148,19 @@
     </div>
     <div id="works">
         <div id="tab-title">
-            <div class="tab-title__item">
+            <div class="tab-title-item">
                 <a href="#opus" aria-controls="home" role="tab" data-toggle="tab">
                     <img src="images/model/Yeva/opus.jpg"> <br/>
                     <span>作品照</span>
                 </a>
             </div>
-            <div class="tab-title__item">
+            <div class="tab-title-item">
                 <a href="#makeup" aria-controls="profile" role="tab" data-toggle="tab">
                     <img src="images/model/Yeva/makeup.jpg"> <br/>
                     <span>素颜</span>
                 </a>
             </div>
-            <div class="tab-title__item">
+            <div class="tab-title-item">
                 <a href="#video" aria-controls="settings" role="tab" data-toggle="tab">
                     <img src="images/model/Yeva/video.jpg"> <br/>
                     <span>视频</span>
@@ -167,26 +172,28 @@
             <div id="opus" role="tabpanel" class="tab-pane active">
                 <div class="tab-content-item">
                     <a href="images/model/Yeva/opus/1.jpg" name="imgView">
-                        <img src="images/model/Yeva/opus/1.jpg"/>
+                        <img src="images/model/Yeva/opus/1.jpg" class="tab-content-img">
                     </a>
-
+                    <a href="images/model/Yeva/opus/2.jpg" name="imgView">
+                        <img src="images/model/Yeva/opus/2.jpg" class="tab-content-img">
+                    </a>
                     <a href="images/model/Yeva/opus/3.jpg" name="imgView">
-                        <img src="images/model/Yeva/opus/3.jpg">
+                        <img src="images/model/Yeva/opus/3.jpg" class="tab-content-img">
                     </a>
                     <a href="images/model/Yeva/opus/4.jpg" name="imgView">
-                        <img src="images/model/Yeva/opus/4.jpg">
+                        <img src="images/model/Yeva/opus/4.jpg" class="tab-content-img">
                     </a>
                     <a href="images/model/Yeva/opus/5.jpg" name="imgView">
-                        <img src="images/model/Yeva/opus/5.jpg">
+                        <img src="images/model/Yeva/opus/5.jpg" class="tab-content-img">
                     </a>
                     <a href="images/model/Yeva/opus/6.jpg" name="imgView">
-                        <img src="images/model/Yeva/opus/6.jpg">
+                        <img src="images/model/Yeva/opus/6.jpg" class="tab-content-img">
                     </a>
                     <a href="images/model/Yeva/opus/7.jpg" name="imgView">
-                        <img src="images/model/Yeva/opus/7.jpg">
+                        <img src="images/model/Yeva/opus/7.jpg" class="tab-content-img">
                     </a>
                     <a href="images/model/Yeva/opus/8.jpg" name="imgView">
-                        <img src="images/model/Yeva/opus/8.jpg">
+                        <img src="images/model/Yeva/opus/8.jpg" class="tab-content-img">
                     </a>
                 </div>
             </div>
