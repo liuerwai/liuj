@@ -50,7 +50,7 @@
         #tab-title {
             display: -webkit-flex;
             display: flex;
-            margin-bottom: 20px;
+            justify-content: space-between;
         }
 
         #tab-title .tab-title-item {
@@ -73,17 +73,18 @@
         }
 
         .tab-content-img {
-            width: 170px;
-            height: 255px;
+            width: 238px;
+            height: 357px;
         }
 
-        #opus .tab-content-item {
+        .tab-content-item {
             display: flex;
             display: -webkit-flex;
             flex-wrap: wrap;
+            align-content: space-around;
         }
-
-        #opus a {
+        .tab-content-a{
+            margin: 2px;
             text-decoration: none;
         }
 
@@ -171,34 +172,34 @@
         <div class="tab-content">
             <div id="opus" role="tabpanel" class="tab-pane active">
                 <div class="tab-content-item">
-                    <a href="images/model/Yeva/opus/1.jpg" name="imgView">
+                    <a href="images/model/Yeva/opus/1.jpg" name="imgView" class="tab-content-a">
                         <img src="images/model/Yeva/opus/1.jpg" class="tab-content-img">
                     </a>
-                    <a href="images/model/Yeva/opus/2.jpg" name="imgView">
+                    <a href="images/model/Yeva/opus/2.jpg" name="imgView" class="tab-content-a">
                         <img src="images/model/Yeva/opus/2.jpg" class="tab-content-img">
                     </a>
-                    <a href="images/model/Yeva/opus/3.jpg" name="imgView">
+                    <a href="images/model/Yeva/opus/3.jpg" name="imgView" class="tab-content-a">
                         <img src="images/model/Yeva/opus/3.jpg" class="tab-content-img">
                     </a>
-                    <a href="images/model/Yeva/opus/4.jpg" name="imgView">
+                    <a href="images/model/Yeva/opus/4.jpg" name="imgView" class="tab-content-a">
                         <img src="images/model/Yeva/opus/4.jpg" class="tab-content-img">
                     </a>
-                    <a href="images/model/Yeva/opus/5.jpg" name="imgView">
+                    <a href="images/model/Yeva/opus/5.jpg" name="imgView" class="tab-content-a">
                         <img src="images/model/Yeva/opus/5.jpg" class="tab-content-img">
                     </a>
-                    <a href="images/model/Yeva/opus/6.jpg" name="imgView">
+                    <a href="images/model/Yeva/opus/6.jpg" name="imgView" class="tab-content-a">
                         <img src="images/model/Yeva/opus/6.jpg" class="tab-content-img">
                     </a>
-                    <a href="images/model/Yeva/opus/7.jpg" name="imgView">
+                    <a href="images/model/Yeva/opus/7.jpg" name="imgView" class="tab-content-a">
                         <img src="images/model/Yeva/opus/7.jpg" class="tab-content-img">
                     </a>
-                    <a href="images/model/Yeva/opus/8.jpg" name="imgView">
+                    <a href="images/model/Yeva/opus/8.jpg" name="imgView" class="tab-content-a">
                         <img src="images/model/Yeva/opus/8.jpg" class="tab-content-img">
                     </a>
                 </div>
             </div>
             <div id="makeup" role="tabpanel" class="tab-pane">
-                <a href="images/model/Yeva/makeup/1.jpg" name="imgView">
+                <a href="images/model/Yeva/makeup/1.jpg" name="imgView" class="tab-content-a">
                     <img src="images/model/Yeva/makeup/1.jpg" class="tab-content-img">
                 </a>
             </div>
@@ -216,9 +217,6 @@
 </div>
 
 
-<div class="footer text-center spacer">
-    Copyright 2018 Wonder Model Agency. All rights reserved
-</div>
 <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
     <div class="slides"></div>
     <h3 class="title">Title</h3>
