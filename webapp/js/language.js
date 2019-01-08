@@ -1,7 +1,4 @@
 $(document).ready(function () {
-    isFromDetail();
-    var wu = "中文";
-    var en = "English";
     var pWonderEn = "Wonder Model Agency is an international model management agency based in China(Chengdu).It was established at beginning of 2015. Members of team come from media, advertising, public relations ";
     var pWonderWu = "Wonder Model Agency是一家总部设在中国（成都）的国际模型管理机构，成立于2015年初。团队成员来自媒体、广告、公关公司。我们共同培养了自己的力量和经验，建立了机构。";
 
@@ -77,31 +74,11 @@ $(document).ready(function () {
         "            </div>\n" +
         "        </div>\n" +
         "    </div>";
-    $("#btnLanguage").text(wu);
-    toEnglish();
-    $("#btnEn").click(function () {
-        toEnglish()
-    });
-    $("#btnCn").click(function () {
-        toChinese();
-    });
-    (function () {
-        var timer = setTimeout(function () {
-            $BeforeEnter.fadeOut("slow");
-        }, 6000000);
-        // 定时消除video
-        var $BeforeEnter = $('#before-enter');
-        $BeforeEnter.click(function () {
-            if (timer) {
-                clearTimeout(timer);
-            }
-            $BeforeEnter.fadeOut("slow");
-        });
-    })();
+
+    changeLaunage();
 
     // 切换至英语
     function toEnglish() {
-        $("#btnLanguage").text(wu);
         $("#pWonder").text(pWonderEn);
         $("#pSince").text(pSinceEn);
         $("#pPlease").html(pPleaseEn);
@@ -121,7 +98,6 @@ $(document).ready(function () {
 
     // 切换至汉语
     function toChinese() {
-        $("#btnLanguage").text(en);
         $("#pWonder").text(pWonderWu);
         $("#pSince").text(pSinceWu);
         $("#pPlease").html(pPleaseWu);
@@ -153,11 +129,12 @@ $(document).ready(function () {
         return theRequest;
     }
 
-    //如果是详情页返回 引导消失
-    function isFromDetail() {
+    //语言切换
+    function changeLaunage() {
+        toEnglish();
         var theRequest = GetRequest();
-        if(theRequest.from=='detail'){
-            $('#before-enter').hide();
+        if(theRequest.l=='cn'){
+            toChinese();
         }
     }
 
